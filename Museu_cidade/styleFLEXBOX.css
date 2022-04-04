@@ -1,0 +1,31 @@
+	/*aula sobre FLEX BOX*/
+#conteudo {
+	height: 500px;
+
+	background-color: red;
+	display: flex;
+	
+
+
+
+	flex-direction: row ; /*row (padrão), row-reverse, column, column-reverse */
+
+	flex-wrap: nowrap; /*nowrap (padrão), wrap-reverse, wrap - O  WRAP FAZ COM QUE O ITEM SE AJUSTE NA TELA, MUDANDO A POSIÇÃO. 
+	O NOWRAP MUDA O TAMANHO PRA ENCAIXAR, SEM HAVER QUEBRA DE LINHA*/ 
+
+	justify-content: space-evenly; /*ALINHAMENTO - padrão: flex-start ; flex-end; center; space-between; space-around; space-evenly*/
+
+	align-items: stretch /*se não tiver width e height do item*/;
+	 /*Alinhamento vertical - stretch; center; flex-sart; flex-end; baseline*/
+
+}
+
+
+
+.item {
+	background: blue;
+	margin: 10px;
+	border: 1px solid #FFF;
+	width: 100px;
+	height: 100px;
+}

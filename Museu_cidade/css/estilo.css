@@ -1,0 +1,189 @@
+/*Estrutura do site
+-----------------------------------*/
+body {
+	background-color: #f4f2ec;
+	background-image: url(../img/fundo.png);
+	background-repeat: repeat-x;
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+#container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+a:link, a:active, a:visited {
+	color: #af670a;
+	text-decoration: none;
+}
+a:hover {
+	color: #227115;
+}
+
+/*Logo
+------------------------------------*/
+#logo h1 {
+	float: left;
+}
+#logo a {
+	width: 248px;
+	height: 21px;
+	text-indent: -999px; /*tirar o nome da área de visualização*/
+	display: block;
+	background: url(../img/logo.png) no-repeat;
+}
+
+/*Barra de navegação
+------------------------------------*/
+header {
+	padding: 15px 0;
+	height: 55px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 20px;
+	float: right;
+}
+
+nav ul li {
+	float: left;
+	text-transform: uppercase;
+
+}
+
+nav ul li a:link {
+	display: block;
+	margin-right: 25px;
+	text-transform: 15px;
+}
+
+nav ul li a:hover {
+	border-bottom: 1px solid #535858;
+}
+
+/*Principal*/
+
+#conteudo {
+	width: 710px;
+	float: left;
+}
+
+aside {
+	float: right;
+	width: 350px;
+	padding-bottom: 20px;
+}
+
+/*Visita*/
+
+section#visita {
+	background-color: #cdc8c1;
+	padding: 10px 27px 27px 27px;
+	margin-top: 10px;
+}
+h3 {
+	font-size: 1.0em;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	color: #227115;
+}
+
+h4 {
+	color: #86521a;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	padding-bottom: 3px;
+	font-weight: 700;
+}
+
+/*Formulários*/
+input {
+	height: 20px;
+	background: #fff;
+	border:  none;
+	font-size: 1em;
+	width: 80px;
+}
+
+input.campo {
+	border: 1px solid #ada484;
+}
+
+input.botao {
+	background: #9b9271;
+	width: 100%;
+	height: 40px;
+	color: white;
+	font-size: 1.2em;
+}
+
+fieldset {
+	border: none;
+
+}
+
+legend {
+	display: none;
+}
+
+/*GALERIA*/
+
+section#galeria a {
+	display: block;
+	background: url(../img/fundo-foto.png) no-repeat;
+	float: left;
+	padding: 16px 15px 17px 15px;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+
+section#galeria img {
+	margin-left: 2px;
+	margin-top: 3px;
+}
+
+/*Postagens*/
+#exposicoes a {
+	display: block;
+	float: none;
+}
+
+#exposicoes li {
+	list-style-type: disc;
+}
+
+#postagens {
+	width: inherit;
+
+
+}
+
+article {
+	float: left;
+	margin-left: 25px;
+}
+
+article#anos, article#exposicoes {
+	width: 310px;
+	margin-top: 20px;
+}
+
+/*Footer*/
+footer {
+	height: 80px;
+	clear: both;
+	padding: 20px 0 30px 0;
+	background: url(../img/fundo-rodape.png) no-repeat center top;
+text-align: center;
+}
+
+footer > p {
+	display: inline-block;
+	padding-left: 10px;
+
+}
+
+footer > p.fechamento {
+	display: block;
+}

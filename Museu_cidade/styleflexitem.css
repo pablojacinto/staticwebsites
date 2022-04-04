@@ -1,0 +1,52 @@
+body {
+	max-width: 90%;
+	margin:  0 auto;
+}
+	
+#conteudo {
+	height: 500px;
+
+	background-color: red;
+	display: flex;
+	
+
+}
+
+
+
+.item {
+	background: blue;
+	margin: 10px;
+	border: 1px solid #FFF;
+	width: 100px;
+	height: 100px;
+/*
+	define a proporção de espaço ocupado por um item*/
+	flex-grow: 0; /*não cresce*/
+
+/*flex basis diz o início do item antes de ter que aplicar o grow e shrink*/
+	flex-basis: ; /*padrão AUTO. define que o tamanho inicial é o que definimos no width*
+	/
+	/*posso usar aoinvés de usar o width*/
+}
+
+/*.ordem1 {
+	order: 1;
+}
+
+.ordem2 {
+	order: 2;
+}
+
+.ordem3 {
+	order: 3;
+}
+
+.ordem4 {
+	order: 4;
+}*/ /*agora basta mudar as posições trocando as classes ou trocando aqui*/
+
+
+.item1 {
+	flex-grow: 1;
+}

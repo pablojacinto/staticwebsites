@@ -1,0 +1,71 @@
+/*configurações padrão, de formatação de fonte, fundo, margem*/
+	body, html {
+		margin: 0;
+		padding: 0;
+		font: 16px "lato", sans-serif;
+		color: #777;
+		height: 100%; /*isso é pra o body expandir sempre a cem por cento de toda a janela*/
+	}
+
+	.conteudo {
+		background-color: white;
+		text-align: justify;
+		padding: 50px 80px;
+	}
+
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+/*Efeito Parallax*/
+	.imagens {
+		position: relative; /*a posição absoluta é melhor pra centralizar e por isso usei ela para os títulos das imagens. ver abaixo. Mas a div pai tem que ser relative e não static*/
+		height: 100%; /*aqui é pra a imagem ocupar a tela toda*/
+		background-color: white;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		opacity: 0.8;
+
+
+	}
+
+	#imagem1 {
+		background-image: url(imagens/individual.jpg);
+
+	}
+
+	#imagem2 {
+		background-image: url(imagens/crianca.jpg);
+	}
+
+	#imagem3 {
+		background-image: url(imagens/casal.jpg);
+	}
+
+	.tituloimg {
+		position: absolute; /*a posição absoluta é melhor pra centralizar, mas a div pai tem que ser relative e não static*/
+		top: 50%;
+		left: 50%;
+		background-color: gray;
+		color: white;
+		width: 400px;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		padding: 15px;
+		font-size: 1.3em;
+		opacity: 0.9;
+	}
+
+/*		.tituloimg {
+		position: relative; 
+		background-color: gray;
+		color: white;
+		top: 50%;
+		left: 50%;
+		padding: 5px;
+		width: 400px;
+		text-align: center;
+	}*/
